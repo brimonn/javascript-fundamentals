@@ -49,3 +49,25 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+let userRole2 = "Employee";
+let accessAuthorization;
+
+switch (userRole2) {
+    case "Employee":
+        accessAuthorization = "Access to Dietary Services";
+        break;
+    case "Registered Member":
+        accessAuthorization = "Access to Dietary Services and a one-on-one interaction with a dietitian";
+        break;
+    case "Subscriber":
+        accessAuthorization = "Partial access to facilitate Dietary Services";
+        break;
+    case "Non Subscriber":
+        accessAuthorization = "Must register or at least subscribe to access this facility";
+        break;
+    default:
+        accessAuthorization = "Unrecognized role";
+}
+
+console.log(accessAuthorization);
