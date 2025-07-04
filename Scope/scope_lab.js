@@ -17,7 +17,7 @@ console.log(globalConst);
 
 //Block scope
 console.log(blockVar);
-console.log(blockLet);*/
+console.log(blockLet);
 
 function show(){
     var functionVar = "I'm a var with block scope";
@@ -29,4 +29,20 @@ show();
 
 console.log(functionVar);
 console.log(functionLet);
-console.log(functionConst);
+console.log(functionConst);*/
+
+{
+    var numero = 10;
+    let nombre = "Simon";
+    const x = 3.14;
+
+    
+}
+
+    numero = 11;
+    nombre = "Sami";
+    x = 3.15;
+
+    console.log(numero);
+    console.log(nombre);
+    console.log(x);
